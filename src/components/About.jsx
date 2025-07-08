@@ -1,10 +1,114 @@
 import React from 'react'
 import Navbar from './Navbar'
+import ProfileCard from './templates/ProfileCard'
+import './Styles/About.css'
+import ShinyText from './templates/ShinyText'
+import { RiNodejsLine } from "react-icons/ri";
+import { SiExpress, SiMysql } from "react-icons/si";
+import { 
+  JavaScriptIcon, 
+  Html5Icon, 
+  Css3Icon, 
+  CPlusPlusIcon, 
+  ReactIcon, 
+  GitIcon, 
+  GitHubIcon, 
+  ShopifyIcon, 
+  AzureIcon 
+} from './Icons/icons';
 
 function About() {
   return (
-    <div className='main-section'>
-        About
+    <div className="about-flex-container">
+      <div className="about-left">
+        <ProfileCard
+          name="Jino Baby"
+          title="Full Stack Developer"
+          handle="jinobaby"
+          status="Online"
+          contactText="Contact Me"
+          avatarUrl="../assets/public/images/logos/Jino.png"
+          showUserInfo={true}
+          enableTilt={true}
+          onContactClick={() => console.log('Contact clicked')}
+        />
+      </div>
+      <div className="about-right">
+        <h2 className='about-title'>About</h2>
+
+        <p className='about-description'>
+          I'm a passionate Full Stack Developer and AI/ML enthusiast currently pursuing Computer Science.
+          I love creating innovative solutions and exploring the latest technologies.
+          Welcome to my portfolio where I showcase my projects and skills!
+        </p>
+        <div className='about-skills'>
+          <h2>Technologies I work with</h2>
+          <div className='about-skills-list'>
+
+            <button className='skill-button'>
+              <JavaScriptIcon />
+              <ShinyText text="JavaScript" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <Html5Icon />
+              <ShinyText text="HTML5" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <Css3Icon />
+              <ShinyText text="CSS3" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <CPlusPlusIcon />
+              <ShinyText text="C / C++" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <ReactIcon />
+              <ShinyText text="React" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <GitIcon />
+              <ShinyText text="Git" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <GitHubIcon />
+              <ShinyText text="GitHub" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <ShopifyIcon />
+              <ShinyText text="Shopify" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <RiNodejsLine />
+              <ShinyText text="Node.js" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <SiExpress />
+              <ShinyText text="Express.js" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <SiMysql />
+              <ShinyText text="SQL / NoSQL" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <AzureIcon />
+              <ShinyText text="Azure" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+          </div>
+        </div>
+
+      </div>
     </div>
   )
 }

@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
     --background-black: #141414;
     --color-main: #C075DB;
@@ -5,10 +7,17 @@
     --color-dark: #2b2b2b;
 }
 
-html, body {
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
     background-color: var(--background-black);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .snap-container {

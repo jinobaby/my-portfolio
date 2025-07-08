@@ -1,62 +1,28 @@
-:root {
-    --background-black: #141414;
-    --color-main: #C075DB;
-    --color-light: #FFFFFF;
-    --color-dark: #2b2b2b;
-}
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
+/* Navbar component specific styles */
 .wrap-container-nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    border-radius: 38px;
-    padding: 1rem;
+    padding-top: 10px;
     height: 7vh;
-    backdrop-filter: blur(24px);      /* Increase this value for more blur */
-    -webkit-backdrop-filter: blur(24px); 
-}
-
-ul,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-left {
-    flex: 15%;
-    background-color: red;
-    display: flex;
-    justify-content: left;
-    align-items: start;
-}
-
-.navbar-right {
-    flex: 15%;
-    background-color: violet;
 }
 
 .navbar-main {
-    flex: 70%;
     display: flex;
+    width: auto;
+    gap: 50px;
     align-items: stretch;
     justify-content: space-evenly;
+    /* background-color: var(--color-main); */
     height: 60px;
-    /* Remove width: 400px; */
-    background-color: #007aff;
     font-size: 20px;
     border-radius: 38px;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 
 .logo-nav {
     fill: aliceblue;
@@ -65,13 +31,35 @@ li {
 }
 
 .navbar-main li {
+    position: relative; /* Needed for absolute positioning of ::after */
     height: 100%;
+    align-items: center;
     display: flex;
+}
+
+.navbar-main li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-main);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 1px;
+}
+
+.navbar-main li:hover::after,
+.navbar-main li:focus-within::after,
+.navbar-main li:active::after {
+    transform: scaleX(1);
 }
 
 .nav-lists {
     position: relative;
-    color: black;
+    color: var(--color-light);
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -84,22 +72,24 @@ li {
     border-radius: 28px;
 }
 
-.nav-lists::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #007aff;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease-in-out;
+.nav-lists:hover,
+.nav-lists:focus,
+.nav-lists:active {
+    text-shadow:
+        0 0 8px var(--color-main),
+        0 0 16px var(--color-main),
+        0 0 24px var(--color-main);
+    color: var(--color-main);
+    outline: none;
 }
 
-.nav-lists:hover::after {
-    transform: scaleX(1);
-    /* background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    color: white; */
+/* Glow effect for the icon when the link is hovered, focused, or active */
+.navbar-main li:hover svg,
+.navbar-main li:focus-within svg,
+.navbar-main li:active svg {
+    filter: drop-shadow(0 0 8px var(--color-main))
+            drop-shadow(0 0 16px var(--color-main))
+            drop-shadow(0 0 24px var(--color-main));
+    transition: filter 0.3s;
+    color: var(--color-main);
 }

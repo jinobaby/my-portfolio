@@ -1,0 +1,136 @@
+.about-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    max-width: 100vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    padding: 2rem;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 100%;
+    color: var(--color-light);
+    padding: 2rem;
+    margin: 0.5rem;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: "Funnel Display", sans-serif;
+    color: var(--color-main);
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-family: 'Chillax', sans-serif;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.about-skills h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Funnel Display", sans-serif;
+    color: var(--color-main);
+    margin-bottom: 1rem;
+}
+
+.about-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+.about-skills-list button {
+    border: 1px solid var(--color-light);
+    border-radius: 38px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: fit-content;
+}
+
+.about-skills-list button:hover {
+    border-color: var(--color-main);
+    transform: translateY(-2px);    
+    box-shadow: 0 4px 8px rgba(192, 117, 219, 0.3);
+}
+.skill-button {
+    gap: 8px;
+}
+
+.skill-button svg{
+    height: 25px;
+    width: auto;
+    fill: var(--color-main);
+}
+
+.custom-class {
+    font-family: 'Chillax', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-light);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-skills-list {
+        gap: 10px;
+    }
+    
+    .about-skills-list button {
+        padding: 6px 16px;
+    }
+    
+    .custom-class {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-skills-list {
+        gap: 8px;
+    }
+    
+    .about-skills-list button {
+        padding: 5px 12px;
+    }
+    
+    .custom-class {
+        font-size: 14px;
+    }
+}
