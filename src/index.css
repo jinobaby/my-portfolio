@@ -23,12 +23,11 @@ html, body {
 .snap-container {
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 .snap-container, .main-section {
   position: relative;
@@ -36,10 +35,10 @@ html, body {
 }
 
 .snap-section {
-  scroll-snap-align: start;
   flex-shrink: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;

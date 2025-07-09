@@ -7,14 +7,14 @@ import { RiNodejsLine } from "react-icons/ri";
 import { SiExpress, SiMysql } from "react-icons/si";
 import { 
   JavaScriptIcon, 
-  Html5Icon, 
-  Css3Icon, 
   CPlusPlusIcon, 
   ReactIcon, 
   GitIcon, 
   GitHubIcon, 
   ShopifyIcon, 
-  AzureIcon 
+  AzureIcon, 
+  Mongodb,
+  Tailwindcss
 } from './Icons/icons';
 
 function About() {
@@ -23,7 +23,7 @@ function About() {
       <div className="about-left">
         <ProfileCard
           name="Jino Baby"
-          title="Full Stack Developer"
+          title="Full Stack Dev"
           handle="jinobaby"
           status="Online"
           contactText="Contact Me"
@@ -37,10 +37,9 @@ function About() {
         <h2 className='about-title'>About</h2>
 
         <p className='about-description'>
-          I'm a passionate Full Stack Developer and AI/ML enthusiast currently pursuing Computer Science.
-          I love creating innovative solutions and exploring the latest technologies.
-          Welcome to my portfolio where I showcase my projects and skills!
-        </p>
+          I'm Jino. I enjoy building dynamic, creative products from start to finish.
+            Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.
+          </p>
         <div className='about-skills'>
           <h2>Technologies I work with</h2>
           <div className='about-skills-list'>
@@ -51,13 +50,13 @@ function About() {
             </button>
 
             <button className='skill-button'>
-              <Html5Icon />
-              <ShinyText text="HTML5" disabled={false} speed={3} className='custom-class' />
+              <Mongodb />
+              <ShinyText text="MongoDB" disabled={false} speed={3} className='custom-class' />
             </button>
 
             <button className='skill-button'>
-              <Css3Icon />
-              <ShinyText text="CSS3" disabled={false} speed={3} className='custom-class' />
+              <Tailwindcss />
+              <ShinyText text="Tailwind CSS" disabled={false} speed={3} className='custom-class' />
             </button>
 
             <button className='skill-button'>

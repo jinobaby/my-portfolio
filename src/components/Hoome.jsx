@@ -13,7 +13,7 @@ function Hoome() {
                 <div className='home-main-heading'>
                     <RotatingText
                         texts={['Hello,', 'नमस्ते,', 'Bonjour,', 'നമസ്ക്കാരം,']}
-                        mainClassName="italic font-semibold text-white text-3xl md:text-4xl"
+                        mainClassName="italic font-normal text-white text-lg md:text-3xl"
                         staggerFrom={"last"}
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}

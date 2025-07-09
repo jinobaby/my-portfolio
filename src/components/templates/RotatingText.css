@@ -88,12 +88,12 @@
 
 .pc-card-wrapper:hover,
 .pc-card-wrapper.active {
-  --card-opacity: 1;
+  --card-opacity: 0.3; /* Reduce from 1 to 0.3 */
 }
 
 .pc-card-wrapper:hover::before,
 .pc-card-wrapper.active::before {
-  filter: contrast(1) saturate(2) blur(40px) opacity(1);
+  filter: contrast(1.2) saturate(1.2) blur(36px); /* Reduce contrast and saturation */
   transform: scale(0.9) translate3d(0, 0, 0.1px);
 }
 
@@ -144,7 +144,7 @@
   mask-size: 150%;
   mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
   transition: filter 0.6s ease;
-  filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.5);
+  filter: brightness(0.8) contrast(1) saturate(0.5); /* Reduce contrast */
   animation: holo-bg 18s linear infinite;
   mix-blend-mode: color-dodge;
 }
@@ -177,7 +177,7 @@
 
 .pc-card:hover .pc-shine,
 .pc-card.active .pc-shine {
-  filter: brightness(0.85) contrast(1.5) saturate(0.5);
+  filter: brightness(0.7) contrast(1.2) saturate(0.4); /* Reduce the hover effect */
   animation: none;
 }
 
