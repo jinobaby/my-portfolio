@@ -27,7 +27,7 @@ function About() {
           handle="jinobaby"
           status="Online"
           contactText="Contact Me"
-          avatarUrl="../assets/public/images/logos/Jino.png"
+          avatarUrl="/src/assets/public/images/IMG_8269.PNG"
           showUserInfo={true}
           enableTilt={true}
           onContactClick={() => console.log('Contact clicked')}

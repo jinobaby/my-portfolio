@@ -12,6 +12,13 @@
     height: 7vh;
     background: rgba(20, 20, 20, 0.95);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* Enhanced scroll state */
+.wrap-container-nav.scrolled {
+    background: rgba(15, 15, 15, 0.98);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .navbar-main {
@@ -20,14 +27,12 @@
     gap: 50px;
     align-items: stretch;
     justify-content: space-evenly;
-    /* background-color: var(--color-main); */
     height: 60px;
     font-size: 20px;
     border-radius: 38px;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 
 .logo-nav {
     fill: aliceblue;
@@ -36,10 +41,15 @@
 }
 
 .navbar-main li {
-    position: relative; /* Needed for absolute positioning of ::after */
+    position: relative;
     height: 100%;
     align-items: center;
     display: flex;
+}
+
+/* Enhanced active state */
+.navbar-main li.active::after {
+    transform: scaleX(1);
 }
 
 .navbar-main li::after {
@@ -75,6 +85,7 @@
     justify-content: center;
     transition: background 0.3s, color 0.3s;
     border-radius: 28px;
+    gap: 8px;
 }
 
 .nav-lists:hover,
@@ -88,6 +99,22 @@
     outline: none;
 }
 
+/* Enhanced active link styling */
+.navbar-main li.active .nav-lists {
+    color: var(--color-main);
+    text-shadow:
+        0 0 8px var(--color-main),
+        0 0 16px var(--color-main),
+        0 0 24px var(--color-main);
+}
+
+.navbar-main li.active svg {
+    filter: drop-shadow(0 0 8px var(--color-main))
+            drop-shadow(0 0 16px var(--color-main))
+            drop-shadow(0 0 24px var(--color-main));
+    color: var(--color-main);
+}
+
 /* Glow effect for the icon when the link is hovered, focused, or active */
 .navbar-main li:hover svg,
 .navbar-main li:focus-within svg,
@@ -97,4 +124,100 @@
             drop-shadow(0 0 24px var(--color-main));
     transition: filter 0.3s;
     color: var(--color-main);
+}
+
+/* Mobile responsiveness - hidden by default */
+.mobile-menu-toggle {
+    display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .wrap-container-nav {
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1001;
+    }
+
+    .mobile-menu-toggle span {
+        width: 100%;
+        height: 3px;
+        background: var(--color-light);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .mobile-menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    .navbar-main {
+        position: fixed;
+        top: 7vh;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 7vh);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        background: rgba(20, 20, 20, 0.98);
+        backdrop-filter: blur(20px);
+        border-left: 1px solid rgba(185, 127, 255, 0.2);
+        padding: 2rem 0;
+        gap: 0;
+        transition: right 0.4s ease;
+        z-index: 1000;
+    }
+
+    .navbar-main.mobile-open {
+        right: 0;
+    }
+
+    .navbar-main li {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-main li::after {
+        display: none;
+    }
+
+    .nav-lists {
+        width: 100%;
+        padding: 20px;
+        justify-content: flex-start;
+        font-size: 18px;
+        border-radius: 0;
+    }
+
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
 }
