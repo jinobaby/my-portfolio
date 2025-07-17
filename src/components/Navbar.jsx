@@ -74,7 +74,6 @@ function Navbar() {
           {navItems.map((item) => {
             const IconComponent = item.icon;
             const isActive = activeSection === item.id;
-            
             return (
               <li key={item.id} className={isActive ? 'active' : ''}>
                 <IconComponent style={iconStyle} />
@@ -90,6 +89,18 @@ function Navbar() {
               </li>
             );
           })}
+          {/* Resume Download Button */}
+          <li className="resume-btn-list">
+            <a
+              href="/resume.pdf"
+              className="resume-btn nav-lists"
+              download
+              tabIndex={0}
+              aria-label="Download Resume"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Menu Toggle */}

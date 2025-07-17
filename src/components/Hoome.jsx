@@ -4,7 +4,7 @@ import TrueFocus from './templates/TrueFocus';
 import RotatingText from './templates/RotatingText';
 import ShinyText from './templates/ShinyText';
 import TiltedCard from './templates/TitleCard';
-import jinoTitleImg from '../assets/public/images/logos/Jino_title.jpg';
+import jinoTitleImg from '../assets/public/images/logos/Jino_logoremoved.jpg';
 
 function Hoome() {
     return (
