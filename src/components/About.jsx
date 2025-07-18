@@ -27,10 +27,11 @@ function About() {
           handle="jinobaby"
           status="Online"
           contactText="Contact Me"
-          avatarUrl="/images/IMG_8269.PNG"
+          avatarUrl="/my-portfolio/IMG_8269.PNG"
+          miniAvatarUrl="/my-portfolio/IMG_8269.PNG"
           showUserInfo={true}
           enableTilt={true}
-          onContactClick={() => console.log('Contact clicked')}
+          onContactClick={() => window.open('mailto:jbaby2527@conestogac.on.ca?subject=Hello Jino!&body=Hi Jino, I found your portfolio and would like to connect with you.', '_blank')}
         />
       </div>
       <div className="about-right">

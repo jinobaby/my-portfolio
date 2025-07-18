@@ -66,6 +66,18 @@ function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Handle resume download
+  const handleResumeDownload = (e) => {
+    e.preventDefault();
+    const link = document.createElement('a');
+    link.href = '/my-portfolio/resume.pdf';
+    link.download = 'Jino_Baby_Resume.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={`wrap-container-nav ${isScrolled ? 'scrolled' : ''}`}>
       <div>
@@ -91,9 +103,12 @@ function Navbar() {
           {/* Resume Download Button */}
           <li className="resume-btn-list">
             <a
-              href="/Jino_Resume.pdf"
+              href="/my-portfolio/resume.pdf"
               className="resume-btn nav-lists"
               download="Jino_Baby_Resume.pdf"
+              onClick={handleResumeDownload}
+              target="_blank"
+              rel="noopener noreferrer"
               tabIndex={0}
               aria-label="Download Resume"
             >

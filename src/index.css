@@ -7,6 +7,119 @@
     --color-dark: #2b2b2b;
 }
 
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-black);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, var(--color-main), #9a4db8);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #d188e6, var(--color-main));
+    box-shadow: 0 0 10px rgba(192, 117, 219, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--background-black);
+}
+
+/* Firefox scrollbar */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-main) var(--background-black);
+}
+
+/* Custom Text Selection Styles */
+::selection {
+    background: var(--color-main);
+    color: var(--background-black);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: var(--color-main);
+    color: var(--background-black);
+    text-shadow: none;
+}
+
+/* Selection for elements with color-main text */
+.text-main::selection,
+.color-main::selection,
+[style*="color: var(--color-main)"]::selection,
+[style*="color: #C075DB"]::selection {
+    background: var(--color-main);
+    color: var(--background-black);
+}
+
+.text-main::-moz-selection,
+.color-main::-moz-selection,
+[style*="color: var(--color-main)"]::-moz-selection,
+[style*="color: #C075DB"]::-moz-selection {
+    background: var(--color-main);
+    color: var(--background-black);
+}
+
+/* Selection for white text elements */
+.text-white::selection,
+.color-light::selection,
+[style*="color: var(--color-light)"]::selection,
+[style*="color: white"]::selection,
+[style*="color: #FFFFFF"]::selection {
+    background: var(--color-light);
+    color: var(--background-black);
+}
+
+.text-white::-moz-selection,
+.color-light::-moz-selection,
+[style*="color: var(--color-light)"]::-moz-selection,
+[style*="color: white"]::-moz-selection,
+[style*="color: #FFFFFF"]::-moz-selection {
+    background: var(--color-light);
+    color: var(--background-black);
+}
+
+/* Selection for dark text elements */
+.text-dark::selection,
+.color-dark::selection,
+[style*="color: var(--color-dark)"]::selection,
+[style*="color: #2b2b2b"]::selection {
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+.text-dark::-moz-selection,
+.color-dark::-moz-selection,
+[style*="color: var(--color-dark)"]::-moz-selection,
+[style*="color: #2b2b2b"]::-moz-selection {
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+/* Selection for specific components */
+.about-title::selection,
+.exp-header::selection,
+.role-title::selection {
+    background: var(--color-main);
+    color: var(--background-black);
+}
+
+.about-title::-moz-selection,
+.exp-header::-moz-selection,
+.role-title::-moz-selection {
+    background: var(--color-main);
+    color: var(--background-black);
+}
+
 * {
     padding: 0;
     margin: 0;

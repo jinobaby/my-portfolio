@@ -2,6 +2,7 @@ import React from 'react'
 import './Styles/Experience.css'
 import ShinyText from './templates/ShinyText'
 
+
 function Projects() {
     return (
         <div className="exp-flex-container">
@@ -35,7 +36,7 @@ function Projects() {
                     {/* Full Stack Personal Finance Optimiser */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="/images/Screenshot 2025-07-16 163353.png" alt="Personal Finance Optimiser" />
+                            <img src="/my-portfolio/Screenshot 2025-07-16 163353.png" alt="Personal Finance Optimiser" />
                             <div className='project-overlay'>
                                 <span className='project-category'>Full Stack</span>
                             </div>
@@ -57,7 +58,7 @@ function Projects() {
                     {/* E-commerce Platform */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="/images/Ecommere.png" alt="E-commerce Platform" />
+                            <img src="/my-portfolio/Ecommere.png" alt="E-commerce Platform" />
                             <div className='project-overlay'>
                                 <span className='project-category'>E-commerce</span>
                             </div>

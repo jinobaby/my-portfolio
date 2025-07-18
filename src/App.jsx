@@ -7,16 +7,16 @@ import Projects from './components/Projects';
 function App() {
   const socialLinks = [
     {
-      url: 'https://www.linkedin.com/',
-      icon: '/images/logos/linkedin_.png',
+      url: 'https://www.linkedin.com/in/jinobaby/',
+      icon: '/my-portfolio/linkedin_.png',
     },
     {
-      url: 'https://github.com/',
-      icon: '/images/logos/github_.png',
+      url: 'https://github.com/jinobaby',
+      icon: '/my-portfolio/github_.png',
     },
     {
-      url: 'https://x.com/',
-      icon: '/images/logos/x_.png',
+      url: 'https://x.com/iamjinobaby',
+      icon: '/my-portfolio/x_.png',
     },
   ];
 
