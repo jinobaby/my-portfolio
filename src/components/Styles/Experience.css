@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 
-/* Section Title */
 .about-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2.5rem, 5vw, 3.5rem);
@@ -32,7 +31,6 @@
     border-radius: 2px;
 }
 
-/* Experience Grid */
 .exp-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
@@ -41,7 +39,6 @@
     max-width: 1200px;
 }
 
-/* Experience Card */
 .exp-item {
     background: rgba(20, 20, 30, 0.95);
     border-radius: 20px;
@@ -76,7 +73,6 @@
     opacity: 1;
 }
 
-/* Header Section */
 .exp-header {
     display: flex;
     align-items: flex-start;
@@ -85,7 +81,6 @@
     gap: 1rem;
 }
 
-/* Role Title */
 .role-title {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-size: 1.5rem;
@@ -95,7 +90,6 @@
     flex: 1;
 }
 
-/* Duration Badge */
 .time-duration-box {
     font-family: 'Inter', sans-serif;
     font-size: 0.85rem;
@@ -109,7 +103,6 @@
     flex-shrink: 0;
 }
 
-/* Company Title */
 .company-title {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-size: 1.1rem;
@@ -119,7 +112,6 @@
     letter-spacing: 0.01em;
 }
 
-/* Location */
 .location {
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
@@ -128,14 +120,12 @@
     letter-spacing: 0.02em;
 }
 
-/* Layout */
 .flex-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Project-specific styles */
 .project-card {
     position: relative;
 }
@@ -146,7 +136,6 @@
     box-shadow: 0 20px 50px rgba(185, 127, 255, 0.15);
 }
 
-/* Project Status Badge */
 .project-status {
     font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
@@ -174,7 +163,6 @@
     color: black;
 }
 
-/* Project Technology Stack */
 .project-tech {
     font-family: 'Inter', sans-serif;
     font-size: 0.85rem;
@@ -184,7 +172,6 @@
     letter-spacing: 0.02em;
 }
 
-/* Project Description */
 .project-description {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
@@ -193,7 +180,6 @@
     margin-bottom: 1.5rem;
 }
 
-/* Project Links */
 .project-links {
     display: flex;
     gap: 1rem;
@@ -230,7 +216,6 @@
     transform: translateY(-2px);
 }
 
-/* Project Image Styles */
 .project-image {
     position: relative;
     width: 100%;
@@ -251,7 +236,6 @@
     transform: scale(1.05);
 }
 
-/* Project Overlay */
 .project-overlay {
     position: absolute;
     top: 0;
@@ -271,7 +255,6 @@
     opacity: 1;
 }
 
-/* Project Category Badge */
 .project-category {
     font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
@@ -285,14 +268,12 @@
     backdrop-filter: blur(10px);
 }
 
-/* Project Content Container */
 .project-content {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-/* Enhanced project card for image layout */
 .project-card {
     overflow: hidden;
     display: flex;
@@ -310,18 +291,15 @@
     margin-top: auto;
 }
 
-/* Image fallback styles */
 .project-image img {
     background: linear-gradient(135deg, rgba(185, 127, 255, 0.1) 0%, rgba(20, 20, 30, 0.8) 100%);
 }
 
-/* Enhanced hover effects for image cards */
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 60px rgba(185, 127, 255, 0.2);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .exp-flex-container {
         padding: 3rem 1.5rem;

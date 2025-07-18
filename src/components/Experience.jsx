@@ -8,8 +8,6 @@ function Experience() {
       <h2 className='about-title'>Experience</h2>
       <div className="flex-container">
         <div className="exp-grid">
-
-          {/* Full Stack Developer */}
           <div className='exp-item'>
             <div className='exp-header'>
               <div className='role-title'>Full Stack Dev</div>
@@ -19,7 +17,6 @@ function Experience() {
             <div className='location'>Kochi, India</div>
           </div>
 
-          {/* Stock Analyst */}
           <div className='exp-item'>
             <div className='exp-header'>
               <div className='role-title'>Stock Analyst</div>
@@ -29,7 +26,6 @@ function Experience() {
             <div className='location'>Waterloo, Canada</div>
           </div>
 
-          {/* Hackathon  */}
           <div className='exp-item'>
             <div className='exp-header'>
               <div className='role-title'>Hackathon</div>
@@ -38,7 +34,6 @@ function Experience() {
             <div className='company-title'>48 Hour - Hackon 2.0 - MCET</div>
             <div className='location'>Trivandrum, India</div>
           </div>
-  
         </div>
       </div>
     </div>

@@ -1,4 +1,3 @@
-/* Home component specific styles */
 .home-main-heading {
     display: flex;
     padding-top: 2rem;
@@ -12,6 +11,9 @@
 
 .home-main-heading-intro-text{
     display: flex;
+    font-size: 2.5rem;
+    font-weight: 600;
+    gap: 1.5rem;
 }
 
 .home-main-location{
@@ -62,18 +64,33 @@
     max-width: 100%;
 }
 
-/* Ensure TiltedCard doesn't cause overflow */
 .home-right > * {
     max-height: 90vh;
     max-width: 100%;
 }
 
-/* Responsive design for mobile devices */
+@media (min-width: 769px) {
+    .home-main-heading-intro-text {
+        font-size: 2.5rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .home-right {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
     .home-flex-container {
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 1rem;
         gap: 2rem;
+        min-height: 100vh;
+        justify-content: flex-start;
+        padding-top: 8vh;
     }
 
     .home-left,
@@ -83,23 +100,83 @@
     }
 
     .home-main-heading {
-        padding-top: 2rem;
+        padding-top: 0;
         align-items: center;
         text-align: center;
+        width: 100%;
+    }
+
+    .home-main-heading-intro-text {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        width: 100%;
+    }
+
+    .home-main-heading-intro-text h2 {
+        margin-bottom: 0 !important;
+        line-height: 1.2;
+        order: 1;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    .home-main-heading-intro-text > div {
+        order: 2;
+        font-size: 3rem !important;
+        margin-top: 3rem;
     }
 
     .home-main-location {
         text-align: center;
         font-size: 16px;
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+    
+    .home-right {
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
     .home-flex-container {
-        padding: 1rem;
+        padding: 1rem 0.5rem;
+        gap: 1.5rem;
+        padding-top: 7vh;
+    }
+    
+    .home-main-heading {
+        padding-top: 0;
+    }
+    
+    .home-main-heading-intro-text {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 2rem;
+    }
+
+    .home-main-heading-intro-text h2 {
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .home-main-heading-intro-text > div {
+        font-size: 2.5rem !important;
+        margin-top: 2rem;
     }
     
     .home-main-location {
         font-size: 14px;
+        padding: 0 0.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .home-right {
+        display: none;
     }
 }

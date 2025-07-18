@@ -23,7 +23,6 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* Fixed Social Links Bar */}
       <div
         style={{
           position: 'fixed',
@@ -34,12 +33,13 @@ function App() {
           borderRadius: '16px',
           boxShadow: '0 2px 12px rgba(0,0,0,0.12)',
           padding: '16px 12px',
-          zIndex: 1000,
+          zIndex: 900,
           display: 'flex',
           flexDirection: 'column',
           gap: '22px',
           alignItems: 'center',
         }}
+        className="social-links-bar"
       >
         {socialLinks.map(link => (
           <a
@@ -59,7 +59,6 @@ function App() {
           </a>
         ))}
       </div>
-      {/* ...existing code... */}
       <div style={{ paddingTop: '7vh' }}>
         <div className="snap-container">
           <section className="snap-section" id="home">
@@ -69,11 +68,9 @@ function App() {
             <About />
           </section>
           <section className="snap-section" id="work">
-            {/* Add your Work component or content here */}
             <Experience />
           </section>
           <section className="snap-section" id="projects">
-            {/* Add your Projects component or content here */}
             <Projects />
           </section>
         </div>

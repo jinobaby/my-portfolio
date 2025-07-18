@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     min-width: 0;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .about-right {
@@ -89,6 +89,7 @@
     transform: translateY(-2px);    
     box-shadow: 0 4px 8px rgba(192, 117, 219, 0.3);
 }
+
 .skill-button {
     gap: 8px;
 }
@@ -106,8 +107,33 @@
     color: var(--color-light);
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    .about-flex-container {
+        flex-direction: column;
+        padding: 1rem 1rem;
+        gap: 1rem;
+        min-height: 100vh;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+    
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
+    
+    .about-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .about-right {
+        padding: 0 1rem;
+    }
+    
     .about-skills-list {
         gap: 10px;
     }
@@ -122,6 +148,20 @@
 }
 
 @media (max-width: 480px) {
+    .about-flex-container {
+        padding: 1rem 0.5rem;
+        gap: 0.8rem;
+        padding-top: 1.5rem;
+    }
+    
+    .about-left {
+        margin-bottom: 0.8rem;
+    }
+    
+    .about-right {
+        padding: 0 0.5rem;
+    }
+    
     .about-skills-list {
         gap: 8px;
     }
@@ -132,5 +172,16 @@
     
     .custom-class {
         font-size: 14px;
+    }
+    
+    .about-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about-description {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
     }
 }

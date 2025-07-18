@@ -6,8 +6,8 @@
   gap: 1em;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;      /* Prevents wrapping to a new line */
-  white-space: nowrap;    /* Ensures all content stays on one line */
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .focus-word {

@@ -24,9 +24,7 @@ function Hoome() {
                         rotationInterval={2000}
                     />
                     <div className='home-main-heading-intro-text'>
-                        <h2>I am </h2>
-                        &nbsp;
-                        &nbsp;
+                        <h2 style={{ fontSize: 'inherit', fontWeight: 'inherit', color: 'inherit', margin: 0 }}>I am</h2>
                         <TrueFocus
                             sentence="Jino Baby"
                             manualMode={false}

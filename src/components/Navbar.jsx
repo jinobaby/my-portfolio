@@ -82,6 +82,42 @@ function Navbar() {
     <div className={`wrap-container-nav ${isScrolled ? 'scrolled' : ''}`}>
       <div>
         <ul className={`navbar-main ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+          {/* Close button for mobile menu */}
+          {isMobileMenuOpen && (
+            <button
+              className="mobile-close-btn"
+              onClick={toggleMobileMenu}
+              aria-label="Close mobile menu"
+              style={{
+                position: 'absolute',
+                top: '30px',
+                right: '30px',
+                background: 'rgba(192, 117, 219, 0.2)',
+                border: 'none',
+                borderRadius: '50%',
+                width: '40px',
+                height: '40px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                fontSize: '24px',
+                color: 'var(--color-light)',
+                zIndex: 1002,
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = 'var(--color-main)';
+                e.target.style.color = 'var(--background-black)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = 'rgba(192, 117, 219, 0.2)';
+                e.target.style.color = 'var(--color-light)';
+              }}
+            >
+              ✕
+            </button>
+          )}
           {navItems.map((item) => {
             const IconComponent = item.icon;
             const isActive = activeSection === item.id;

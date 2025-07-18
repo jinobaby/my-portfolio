@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import ProfileCard from './templates/ProfileCard'
 import './Styles/About.css'
 import ShinyText from './templates/ShinyText'
@@ -39,12 +38,11 @@ function About() {
 
         <p className='about-description'>
           I'm Jino. I enjoy building dynamic, creative products from start to finish.
-            Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.
-          </p>
+          Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.
+        </p>
         <div className='about-skills'>
           <h2>Technologies I work with</h2>
           <div className='about-skills-list'>
-
             <button className='skill-button'>
               <JavaScriptIcon />
               <ShinyText text="JavaScript" disabled={false} speed={3} className='custom-class' />
@@ -104,7 +102,6 @@ function About() {
               <AzureIcon />
               <ShinyText text="Azure" disabled={false} speed={3} className='custom-class' />
             </button>
-
           </div>
         </div>
 

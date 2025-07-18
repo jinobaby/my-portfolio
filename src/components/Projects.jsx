@@ -9,8 +9,6 @@ function Projects() {
             <h2 className='about-title'>Projects</h2>
             <div className="flex-container">
                 <div className="exp-grid">
-
-                    {/* AI-Powered Portfolio Optimizer */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
                             <img src="" alt="AI Resume Optimizer" />
