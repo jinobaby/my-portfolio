@@ -12,7 +12,7 @@ function Projects() {
                     {/* AI-Powered Portfolio Optimizer */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="/src/assets/public/images/project1.png" alt="AI Portfolio Optimizer" />
+                            <img src="" alt="AI Resume Optimizer" />
                             <div className='project-overlay'>
                                 <span className='project-category'>AI/ML</span>
                                 <span className='project-category'>Full Stack</span>
@@ -35,7 +35,7 @@ function Projects() {
                     {/* Full Stack Personal Finance Optimiser */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="src\assets\public\images\Screenshot 2025-07-16 163353.png" alt="Personal Finance Optimiser" />
+                            <img src="/images/Screenshot 2025-07-16 163353.png" alt="Personal Finance Optimiser" />
                             <div className='project-overlay'>
                                 <span className='project-category'>Full Stack</span>
                             </div>
@@ -57,7 +57,7 @@ function Projects() {
                     {/* E-commerce Platform */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="\src\assets\public\images\Ecommere.png" alt="E-commerce Platform" />
+                            <img src="/images/Ecommere.png" alt="E-commerce Platform" />
                             <div className='project-overlay'>
                                 <span className='project-category'>E-commerce</span>
                             </div>
@@ -80,7 +80,7 @@ function Projects() {
                     {/* Dating Website */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="/src/assets/public/images/project1.png" alt="Object Detection System" />
+                            <img src="" alt="Dating Website" />
                             <div className='project-overlay'>
                                 <span className='project-category'>Dating Website</span>
                             </div>
@@ -102,9 +102,9 @@ function Projects() {
                     {/* Cryptocurrency Trading Bot */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="https://imgs.search.brave.com/S72AalJEF9kFKiqv3VsFrLc3IOYNzp0YlpVbcenazNo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9pbnRlcmFjdGl2/ZS1tYWxsLWtpb3Nr/LWRpZ2l0YWwta2lv/c2stbWFsbC13aGVy/ZS1zaG9wcGVycy1j/YW4tZmluZC1zdG9y/ZS1pbmZvcm1hdGlv/bi1wcm9tb185OTU1/NzgtMTE2NTMuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MA" alt="Crypto Trading Bot" />
+                            <img src="https://imgs.search.brave.com/S72AalJEF9kFKiqv3VsFrLc3IOYNzp0YlpVbcenazNo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9pbnRlcmFjdGl2/ZS1tYWxsLWtpb3Nr/LWRpZ2l0YWwta2lv/c2stbWFsbC13aGVy/ZS1zaG9wcGVycy1j/YW4tZmluZC1zdG9y/ZS1pbmZvcm1hdGlv/bi1wcm9tb185OTU1/NzgtMTE2NTMuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MA" alt="KI" />
                             <div className='project-overlay'>
-                                <span className='project-category'>FinTech</span>
+                                <span className='project-category'>C</span>
                             </div>
                         </div>
                         <div className='project-content'>

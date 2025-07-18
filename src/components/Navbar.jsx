@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import './Styles/Navbar.css'
-import {Home, Information, Workflow, MessageBadge} from './Icons/icons'
+import { Home, Information, Workflow, MessageBadge } from './Icons/icons'
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
@@ -14,7 +14,6 @@ function Navbar() {
     { id: 'about', label: 'About', icon: Information, href: '#about' },
     { id: 'experience', label: 'Experience', icon: Workflow, href: '#experience' },
     { id: 'projects', label: 'Projects', icon: Workflow, href: '#projects' },
-    { id: 'contact', label: 'Contact', icon: MessageBadge, href: '#contact' }
   ], []);
 
   // Handle smooth scrolling
@@ -22,7 +21,7 @@ function Navbar() {
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -77,8 +76,8 @@ function Navbar() {
             return (
               <li key={item.id} className={isActive ? 'active' : ''}>
                 <IconComponent style={iconStyle} />
-                <a 
-                  className='nav-lists' 
+                <a
+                  className='nav-lists'
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href, item.id)}
                   onKeyDown={(e) => handleKeyDown(e, item.href, item.id)}
@@ -92,9 +91,9 @@ function Navbar() {
           {/* Resume Download Button */}
           <li className="resume-btn-list">
             <a
-              href="/resume.pdf"
+              href="/Jino_Resume.pdf"
               className="resume-btn nav-lists"
-              download
+              download="Jino_Baby_Resume.pdf"
               tabIndex={0}
               aria-label="Download Resume"
             >
@@ -104,7 +103,7 @@ function Navbar() {
         </ul>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
@@ -116,8 +115,8 @@ function Navbar() {
 
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
-          <div 
-            className="mobile-overlay" 
+          <div
+            className="mobile-overlay"
             onClick={() => setIsMobileMenuOpen(false)}
           />
         )}

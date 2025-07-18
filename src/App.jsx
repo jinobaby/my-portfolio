@@ -8,15 +8,15 @@ function App() {
   const socialLinks = [
     {
       url: 'https://www.linkedin.com/',
-      icon: '../src/assets/public/images/logos/linkedin_.png',
+      icon: '/images/logos/linkedin_.png',
     },
     {
       url: 'https://github.com/',
-      icon: '../src/assets/public/images/logos/github_.png',
+      icon: '/images/logos/github_.png',
     },
     {
       url: 'https://x.com/',
-      icon: '../src/assets/public/images/logos/x_.png',
+      icon: '/images/logos/x_.png',
     },
   ];
 
@@ -52,7 +52,7 @@ function App() {
             <img
               src={link.icon}
               alt={link.name}
-              style={{ width: 32, height: 32, marginBottom: 4, filter: 'grayscale(0%)' }}
+              style={{ width: 22, height: 22, marginBottom: 4, filter: 'grayscale(0%)' }}
               loading="lazy"
             />
             <span style={{ color: '#222', fontWeight: 500, fontSize: 12 }}>{link.name}</span>
