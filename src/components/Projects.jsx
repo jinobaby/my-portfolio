@@ -11,7 +11,7 @@ function Projects() {
                 <div className="exp-grid">
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="" alt="AI Resume Optimizer" />
+                            <img src="/my-porfolio/file_2025-07-22_17.29.20[1].png" alt="AI Resume Optimizer" />
                             <div className='project-overlay'>
                                 <span className='project-category'>AI/ML</span>
                                 <span className='project-category'>Full Stack</span>
@@ -48,7 +48,7 @@ function Projects() {
                             <ShinyText className='project-description' text={"Building Aureus, an end‑to‑end web app that empowers users to track spending, forecast budgets, and optimize investment portfolios with real‑time, machine‑learning‑powered recommendations. I architected a React‑based dashboard, designed and deployed custom TensorFlow pipelines (via FastAPI) to analyze transaction data in‑memory, and implemented MongoDB backed storage for secure user profiles. The result is a seamless, responsive platform that delivers personalized financial insights and actionable alerts."} />
                             <div className='project-links'>
                                 <a href="https://github.com/jinobaby/Aureus---The-Finance-Optimiser" className='project-link'>GitHub</a>
-                                <a href="#" className='project-link demo'>Live Demo</a>
+                                <a href="https://www.linkedin.com/posts/jinobaby_opensource-aitools-mernstack-activity-7353680552878592001-3_fJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPR8E4BRM9woIbIDs6qHFPM8uNL53BbVes" className='project-link demo'>Preview</a>
                             </div>
                         </div>
                     </div>
