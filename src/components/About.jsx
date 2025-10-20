@@ -13,7 +13,8 @@ import {
   ShopifyIcon, 
   AzureIcon, 
   Mongodb,
-  Tailwindcss
+  Tailwindcss,
+  Python
 } from './Icons/icons';
 
 function About() {
@@ -46,6 +47,11 @@ function About() {
             <button className='skill-button'>
               <JavaScriptIcon />
               <ShinyText text="JavaScript" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <Python />
+              <ShinyText text="Python" disabled={false} speed={3} className='custom-class' />
             </button>
 
             <button className='skill-button'>

@@ -11,7 +11,7 @@ function Projects() {
                 <div className="exp-grid">
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="/my-porfolio/file_2025-07-22_17.29.20[1].png" alt="AI Resume Optimizer" />
+                            <img src="/my-portfolio/file_2025-07-22_17.29.20[1].png" alt="AI Resume Optimizer" />
                             <div className='project-overlay'>
                                 <span className='project-category'>AI/ML</span>
                                 <span className='project-category'>Full Stack</span>
@@ -79,7 +79,7 @@ function Projects() {
                     {/* Dating Website */}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
-                            <img src="" alt="Dating Website" />
+                            <img src="/my-portfolio/Gemini_Generated_Image_hzjzg8hzjzg8hzjz.png" alt="Dating Website" />
                             <div className='project-overlay'>
                                 <span className='project-category'>Dating Website</span>
                             </div>
@@ -93,12 +93,12 @@ function Projects() {
                             <ShinyText className='project-description' text={"Just Us is a modern dating app built and designed to help users form genuine connections through smart matching and real-time chat. Unlike typical dating platforms, it emphasizes meaningful interactions over endless swiping, using advanced algorithms to match people based on shared interests and conversation compatibility. The app is lightweight, privacy-focused, and offers a seamless experience for discovering matches, chatting, and managing profiles, making it perfect for anyone seeking real relationships in a safe, user-friendly environment."} />
                             <div className='project-links'>
                                 <a href="#" className='project-link'>GitHub</a>
-                                <a href="#" className='project-link demo'>Demo Video</a>
+                                <a href="https://justus-2i0f.onrender.com/login" className='project-link demo'>Live Demo</a>
                             </div>
                         </div>
                     </div>
 
-                    {/* Cryptocurrency Trading Bot */}
+                    {/* KIOSK*/}
                     <div className='exp-item project-card'>
                         <div className='project-image'>
                             <img src="https://imgs.search.brave.com/S72AalJEF9kFKiqv3VsFrLc3IOYNzp0YlpVbcenazNo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9pbnRlcmFjdGl2/ZS1tYWxsLWtpb3Nr/LWRpZ2l0YWwta2lv/c2stbWFsbC13aGVy/ZS1zaG9wcGVycy1j/YW4tZmluZC1zdG9y/ZS1pbmZvcm1hdGlv/bi1wcm9tb185OTU1/NzgtMTE2NTMuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MA" alt="KI" />

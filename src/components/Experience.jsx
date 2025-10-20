@@ -8,14 +8,6 @@ function Experience() {
       <h2 className='about-title'>Experience</h2>
       <div className="flex-container">
         <div className="exp-grid">
-          <div className='exp-item'>
-            <div className='exp-header'>
-              <div className='role-title'>Full Stack Dev</div>
-              <div className='time-duration-box'>February - July 2026</div>
-            </div>
-            <div className='company-title'>Techwingsys</div>
-            <div className='location'>Kochi, India</div>
-          </div>
 
           <div className='exp-item'>
             <div className='exp-header'>
