@@ -11,7 +11,9 @@ import {
   GitIcon, 
   GitHubIcon, 
   ShopifyIcon, 
-  AzureIcon, 
+  AzureIcon,
+  DockerIcon,
+  JavaIcon,
   Mongodb,
   Tailwindcss,
   Python
@@ -108,6 +110,17 @@ function About() {
               <AzureIcon />
               <ShinyText text="Azure" disabled={false} speed={3} className='custom-class' />
             </button>
+
+            <button className='skill-button'>
+              <DockerIcon />
+              <ShinyText text="Docker" disabled={false} speed={3} className='custom-class' />
+            </button>
+
+            <button className='skill-button'>
+              <JavaIcon />
+              <ShinyText text="Java" disabled={false} speed={3} className='custom-class' />
+            </button>
+
           </div>
         </div>
 
